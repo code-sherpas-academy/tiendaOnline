@@ -1,8 +1,4 @@
 fun main(){
-    var miTienda:TiendaOnline = TiendaOnline()
-    println(miTienda.stock.crearProductos())
-    println(miTienda.stock.ordenarStockPorPrecio())
-    println(miTienda.mostrarFormatoCatalogo())
 
 
 /*Ver todos los productos
