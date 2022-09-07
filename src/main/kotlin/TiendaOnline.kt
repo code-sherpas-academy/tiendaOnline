@@ -2,6 +2,7 @@ class TiendaOnline(){
     var stock = AlmacenGetionStock()
         private set
 
+
     fun mostrarFormatoCatalogo():String{
         var productoCatalogo:String = ""
         for (producto in stock.productosEnStock){
