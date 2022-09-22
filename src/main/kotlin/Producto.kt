@@ -1,8 +1,5 @@
-class Producto(id: Int, nombre: String, referencia: String, precio: Double, descriptionCorta: String, atributosDestacados: String, img: String) {
+class Producto(id: Int, referencia: String, precio: Double, descriptionCorta: String, atributosDestacados: String, img: String) {
 
-   private var idProducto = id
-   var nombreProducto = nombre
-   private set
    var referenciaProducto = referencia
    private set//solo ocultamos la reasignación del campo
    var precioProducto = precio
@@ -13,7 +10,6 @@ class Producto(id: Int, nombre: String, referencia: String, precio: Double, desc
    private set
    var imgProducto = img
    private set
-
 
 
 }

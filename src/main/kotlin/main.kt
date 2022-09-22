@@ -1,7 +1,8 @@
 fun main(){
 
+    var miTienda:TiendaOnline = TiendaOnline()
 
-/*Ver todos los productos
-Ver el detalle del producto
-Filtro básico que ordena productos por precio*/
+    println(miTienda.mostrarFormatoCatalogo())
+    println(miTienda.mostrarFormatoCatalogoOrdenado())
+
 }
