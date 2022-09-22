@@ -1,8 +1,8 @@
 fun main(){
 
-    var miTienda:TiendaOnline = TiendaOnline()
+    var miTienda:PantallaTientaOnline = PantallaTientaOnline()
 
-    println(miTienda.mostrarFormatoCatalogo())
-    println(miTienda.mostrarFormatoCatalogoOrdenado())
+    println(miTienda.verTiendaOnline())
+
 
 }

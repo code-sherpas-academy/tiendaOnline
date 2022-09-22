@@ -1,4 +1,4 @@
-class TiendaOnline(){
+class FormatosTiendaOnline(){
     var stock = AlmacenGetionStock()
         private set
 
@@ -25,4 +25,19 @@ class TiendaOnline(){
         }
         return productoCatalogo
     }
+
+    fun mostrarFormatoProducto(producto: Producto){
+        println(producto.imgProducto)
+        println("\uD83D\uDCB0 Price: ${producto.precioProducto} €.")
+        println("Reference: ${producto.referenciaProducto}")
+       // println("${storeToShow.howManyOfThisProduct(product.showProductReference())} left.\n")
+       // println("SUMMARY:")
+        //println("${product.showProductDescription()}\n")
+        //println("DESCRIPTION:\n" +
+                //"${product.showProductAttribute()}\n" +
+                //"${product.showLongDescription()}\n")
+    }
+
+
+
 }
