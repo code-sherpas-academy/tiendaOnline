@@ -26,16 +26,11 @@ class FormatosTiendaOnline(){
         return productoCatalogo
     }
 
-    fun mostrarFormatoProducto(producto: Producto){
-        println(producto.imgProducto)
-        println("\uD83D\uDCB0 Price: ${producto.precioProducto} €.")
-        println("Reference: ${producto.referenciaProducto}")
-       // println("${storeToShow.howManyOfThisProduct(product.showProductReference())} left.\n")
-       // println("SUMMARY:")
-        //println("${product.showProductDescription()}\n")
-        //println("DESCRIPTION:\n" +
-                //"${product.showProductAttribute()}\n" +
-                //"${product.showLongDescription()}\n")
+    fun mostrarFormatoProducto(producto: Producto): String {
+        return ("${producto.imgProducto} \n" +
+                "\uD83D\uDCB0 Price: ${producto.precioProducto} €.\n" +
+                "2. Keep browsing products \n" +
+                "Reference: ${producto.referenciaProducto} \n")
     }
 
 
