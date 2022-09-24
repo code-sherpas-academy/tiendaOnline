@@ -28,9 +28,15 @@ class FormatosTiendaOnline(){
 
     fun mostrarFormatoProducto(producto: Producto): String {
         return ("${producto.imgProducto} \n" +
-                "\uD83D\uDCB0 Price: ${producto.precioProducto} €.\n" +
-                "2. Keep browsing products \n" +
-                "Reference: ${producto.referenciaProducto} \n")
+                "💰 Price: ${producto.precioProducto} €.\n" +
+                "Reference: ${producto.referenciaProducto} \n"+
+                "<UNITS_IN_STOCK> left.\n" +
+                "\n"+
+                "SUMMARY: \n" +
+                "${producto.atributosDestacados} \n" +
+                "\n"+
+                "DESCRIPTION: \n" +
+                "${producto.descripcionProducto}")
     }
 
 

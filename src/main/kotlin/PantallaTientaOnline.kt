@@ -20,6 +20,7 @@ class PantallaTientaOnline(){
 
     fun seguirPrograma():String{
         println("¿What would you like to do next?\n" +
+                "\n"+
                 "1. Add product to cart\n" +
                 "2. Keep browsing products\n")
             val respuestaProximoPaso = readln()
