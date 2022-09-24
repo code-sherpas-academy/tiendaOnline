@@ -1,4 +1,4 @@
-class TiendaOnline(){
+class FormatosTiendaOnline(){
     var stock = AlmacenGetionStock()
         private set
 
@@ -25,4 +25,14 @@ class TiendaOnline(){
         }
         return productoCatalogo
     }
+
+    fun mostrarFormatoProducto(producto: Producto): String {
+        return ("${producto.imgProducto} \n" +
+                "\uD83D\uDCB0 Price: ${producto.precioProducto} €.\n" +
+                "2. Keep browsing products \n" +
+                "Reference: ${producto.referenciaProducto} \n")
+    }
+
+
+
 }

@@ -8,6 +8,13 @@ class AlmacenGetionStock {
     }
 
 
+    fun buscarPoducto(referenciaABuscar: String): Producto{
+        for (producto in productosEnStock){
+            if (referenciaABuscar == producto.referenciaProducto) return producto
+        }
+        throw IllegalArgumentException ("Referencia no encontrada")
+    }
+
 }
 
 
