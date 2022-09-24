@@ -1,3 +1,5 @@
+import java.util.*
+
 class PantallaTientaOnline(){
   var formato= FormatosTiendaOnline()
      private set
@@ -12,7 +14,7 @@ class PantallaTientaOnline(){
 
     fun preguntarPorReferenciaProducto(): String{
         println("Which product do you like to explore?\n Enter a produt's reference:\n")
-        val referenciaABuscar = readln()
+        val referenciaABuscar = readln().uppercase(Locale.getDefault())
         return referenciaABuscar
     }
 
